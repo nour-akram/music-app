@@ -198,6 +198,7 @@ html {
      top: 30%;
     display: none;
     }
+    
   }
  
   
@@ -227,5 +228,20 @@ html {
 .icon_light .moon ,.icon_light .sun{
     font-size: 20px;
 }
+p{
+  position: absolute;
+  bottom: 26px;
+}
   }
   
+  @media (max-width: 380px){
+    header .bottom-side .icons::before {
+      width: 150px;
+      height: 116px;
+      left: 9%;
+    }
+    header .bottom-side .wave {
+      right: 43%;
+      }
+  
+  }
