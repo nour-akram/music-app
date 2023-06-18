@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music app</title>
+    <link rel="stylesheet" href="./home.css">
+    <link rel="icon" type="image/x-icon" href="assests/favicon-removebg-preview.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+</head>
+<body >
+    <!-- loader -->
+    <div id="overlay">
+      <div class="container-for-loader">
+          <span class="loader"></span>
+      </div>
+    </div>
+    <header>
+      <div class="left-side">
+          <h6 id="menu_list_active_btn">
+            <i class="fa-solid fa-headphones"></i>
+          </h6>
+          <h1>playlist</h1>
+          <div class="playlist">
+            <h4 class="active"><span></span><i class="fa-solid fa-music"></i>playlist</h4>
+            <h4><span></span><i class="fa-solid fa-music"></i>last listening</h4>
+            <h4><span></span><i class="fa-solid fa-music"></i>Recommended</h4>
+          </div>
+          <div class="songs-part">
+             <li class="songItem"> 
+               <span>01 </span>  
+               <img src="assests/images/1.jpg" alt="">
+               <h5>on my way <br> <div class="title">Alan walker</div></h5>
+               <i class="fa-solid fa-circle-play playlistPlay" id="1"></i>
+             </li>
+             <li class="songItem"> 
+              <span>02 </span>  
+              <img src="assests/images/2.jpg" alt="">
+              <h5>on my way <br> <div class="title">Alan walker</div></h5>
+              <i class="fa-solid fa-circle-play  playlistPlay" id="2"></i>
+            </li>
+            <li class="songItem"> 
+              <span>03 </span>  
+              <img src="assests/images/1.jpg" alt="">
+              <h5>on my way <br> <div class="title">Alan walker</div></h5>
+              <i class="fa-solid fa-circle-play  playlistPlay"id="3"></i>
+            </li>
+            <li class="songItem"> 
+              <span>04 </span>  
+              <img src="assests/images/1.jpg" alt="">
+              <h5>on my way <br> <div class="title">Alan walker</div></h5>
+              <i class="fa-solid fa-circle-play  playlistPlay"id="4"></i>
+            </li>
+            <li class="songItem"> 
+              <span>05 </span>  
+              <img src="assests/images/1.jpg" alt="">
+              <h5>on my way <br> <div class="title">Alan walker</div></h5>
+              <i class="fa-solid fa-circle-play   playlistPlay"id="5"></i>
+            </li>
+            <li class="songItem"> 
+              <span>06 </span>  
+              <img src="assests/images/1.jpg" alt="">
+              <h5>on my way <br> <div class="title">Alan walker</div></h5>
+              <i class="fa-solid fa-circle-play  playlistPlay" id="6"></i>
+            </li>
+            <li class="songItem"> 
+              <span>07 </span>  
+              <img src="assests/images/1.jpg" alt="">
+              <h5>on my way <br> <div class="title">Alan walker</div></h5>
+              <i class="fa-solid fa-circle-play  playlistPlay" id="7"></i>
+            </li>
+            <li class="songItem"> 
+              <span>08 </span>  
+              <img src="assests/images/1.jpg" alt="">
+              <h5>on my way <br> <div class="title">Alan walker</div></h5>
+              <i class="fa-solid fa-circle-play playlistPlay" id="8"></i>
+            </li>
+            <li class="songItem"> 
+              <span>09 </span>  
+              <img src="assests/images/1.jpg" alt="">
+              <h5>on my way <br> <div class="title">Alan walker</div></h5>
+              <i class="fa-solid fa-circle-play  playlistPlay" id="9"></i>
+            </li>
+            <li class="songItem"> 
+              <span>10 </span>  
+              <img src="assests/images/1.jpg" alt="">
+              <h5>on my way <br> <div class="title">Alan walker</div></h5>
+              <i class="fa-solid fa-circle-play  playlistPlay" id="10"></i>
+            </li>
+          </div>
+      </div>
+      <div class="right-side">
+        <nav> 
+          <ul>
+            <li>Discover <span></span></li>
+            <li>My Library<span></span></li>
+            <li>Radio<span></span></li>
+          </ul>
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text"id="input_for_search" placeholder=" Search Music...">
+            <div class="search_result">
+              <!-- <a href="#" class="card"> 
+                  <img src="./assests/images/1.jpg" alt="">
+                  <div class="content">
+                    mi gente  <div class="title">willy william</div>
+                  </div>
+              </a> -->
+              
+            </div>
+          </div>
+          <div class="icon_light">
+            <i class="moon fa-solid fa-moon" id="moon"></i>
+            <i class="sun fa-solid fa-sun" id="sun"></i>
+          </div>
+           <div class="details">
+              <p id="userName"></p>
+              <div class="user_image">
+                <img src="./assests/images/Default_pfp.svg.png" id="profile_image" alt="">
+              </div>
+           
+           </div>
+        </nav>
+        <div class="content">
+            <h1>Alen walker-Fade</h1>
+            <p>You were the shadow to my light did you feel us Another start you fade <br> away afraid our aim is out of sight wanna see us Alive</p>
+             <div class="buttons">
+                  <button>PLAY</button>
+                  <button>FOLLOW</button>
+             </div>
+        </div>
+        <div class="popular-song">
+             <div class="h4">
+               <h4>popular song</h4>
+               <div class="btn-s">
+                <i class="fa-solid fa-arrow-left" id="pop_song_left"></i>
+                <i class="fa-solid fa-arrow-right"  id="pop_song_right"></i>
+               </div>
+             </div>
+             <div class="pop-song">
+              <li class="songItem"> 
+                <div class="img_play">
+                  <img src="assests/images/1.jpg" alt="">
+                  <i class="fa-solid fa-circle-play  playlistPlay"id="11"></i>
+                </div>
+                <h5>on my way <br> <div class="title">Alan walker</div></h5>
+              </li>
+              <li class="songItem"> 
+                <div class="img_play">
+                  <img src="assests/images/1.jpg" alt="">
+                  <i class="fa-solid fa-circle-play  playlistPlay"id="12"></i>
+                </div>
+                <h5>on my way <br> <div class="title">Alan walker</div></h5>
+              </li>
+              <li class="songItem"> 
+                <div class="img_play">
+                  <img src="assests/images/1.jpg" alt="">
+                  <i class="fa-solid fa-circle-play  playlistPlay"id="13"></i>
+                </div>
+                <h5>on my way <br> <div class="title">Alan walker</div></h5>
+              </li> 
+              <li class="songItem"> 
+                <div class="img_play">
+                  <img src="assests/images/1.jpg" alt="">
+                  <i class="fa-solid fa-circle-play  playlistPlay"id="14"></i>
+                </div>
+                <h5>on my way <br> <div class="title">Alan walker</div></h5>
+              </li>
+              <li class="songItem"> 
+                <div class="img_play">
+                  <img src="assests/images/1.jpg" alt="">
+                  <i class="fa-solid fa-circle-play  playlistPlay"id="15"></i>
+                </div>
+                <h5>on my way <br> <div class="title">Alan walker</div></h5>
+              </li>
+              <li class="songItem"> 
+                <div class="img_play">
+                  <img src="assests/images/1.jpg" alt="">
+                  <i class="fa-solid fa-circle-play  playlistPlay"id="16"></i>
+                </div>
+                <h5>on my way <br> <div class="title">Alan walker</div></h5>
+              </li>
+              <li class="songItem"> 
+                <div class="img_play">
+                  <img src="assests/images/1.jpg" alt="">
+                  <i class="fa-solid fa-circle-play  playlistPlay"id="17"></i>
+                </div>
+                <h5>on my way <br> <div class="title">Alan walker</div></h5>
+              </li>
+              <li class="songItem"> 
+                <div class="img_play">
+                  <img src="assests/images/1.jpg" alt="">
+                  <i class="fa-solid fa-circle-play  playlistPlay"id="18"></i>
+                </div>
+                <h5>on my way <br> <div class="title">Alan walker</div></h5>
+              </li>
+              <li class="songItem"> 
+                <div class="img_play">
+                  <img src="assests/images/1.jpg" alt="">
+                  <i class="fa-solid fa-circle-play   playlistPlay" id="19"></i>
+                </div>
+                <h5>on my way <br> <div class="title">Alan walker</div></h5>
+              </li>
+              <li class="songItem"> 
+                <div class="img_play">
+                  <img src="assests/images/1.jpg" alt="">
+                  <i class="fa-solid fa-circle-play   playlistPlay"id="20"></i>
+                </div>
+                <h5>on my way <br> <div class="title">Alan walker</div></h5>
+              </li>
+              <li class="songItem"> 
+                <div class="img_play">
+                  <img src="assests/images/1.jpg" alt="">
+                  <i class="fa-solid fa-circle-play   playlistPlay"id="21"></i>
+                </div>
+                <h5>on my way <br> <div class="title">Alan walker</div></h5>
+              </li>
+              <li class="songItem"> 
+                <div class="img_play">
+                  <img src="assests/images/1.jpg" alt="">
+                  <i class="fa-solid fa-circle-play   playlistPlay"id="22"></i>
+                </div>
+                <h5>on my way <br> <div class="title">Alan walker</div></h5>
+              </li>
+              <li class="songItem"> 
+                <div class="img_play">
+                  <img src="assests/images/1.jpg" alt="">
+                  <i class="fa-solid fa-circle-play   playlistPlay"id="23"></i>
+                </div>
+                <h5>on my way <br> <div class="title">Alan walker</div></h5>
+              </li>
+              <li class="songItem"> 
+                <div class="img_play">
+                  <img src="assests/images/1.jpg" alt="">
+                  <i class="fa-solid fa-circle-play   playlistPlay"id="24"></i>
+                </div>
+                <h5>on my way <br> <div class="title">Alan walker</div></h5>
+              </li>
+              <li class="songItem"> 
+                <div class="img_play">
+                  <img src="assests/images/1.jpg" alt="">
+                  <i class="fa-solid fa-circle-play   playlistPlay"id="25"></i>
+                </div>
+                <h5>on my way <br> <div class="title">Alan walker</div></h5>
+              </li>
+              <li class="songItem"> 
+                <div class="img_play">
+                  <img src="assests/images/1.jpg" alt="">
+                  <i class="fa-solid fa-circle-play   playlistPlay"id="26"></i>
+                </div>
+                <h5>on my way <br> <div class="title">Alan walker</div></h5>
+              </li>
+              <li class="songItem"> 
+                <div class="img_play">
+                  <img src="assests/images/1.jpg" alt="">
+                  <i class="fa-solid fa-circle-play   playlistPlay"id="27"></i>
+                </div>
+                <h5>on my way <br> <div class="title">Alan walker</div></h5>
+              </li>
+              <li class="songItem"> 
+                <div class="img_play">
+                  <img src="assests/images/1.jpg" alt="">
+                  <i class="fa-solid fa-circle-play   playlistPlay"id="28"></i>
+                </div>
+                <h5>on my way <br> <div class="title">Alan walker</div></h5>
+              </li>
+              <li class="songItem"> 
+                <div class="img_play">
+                  <img src="assests/images/1.jpg" alt="">
+                  <i class="fa-solid fa-circle-play   playlistPlay"id="29"></i>
+                </div>
+                <h5>on my way <br> <div class="title">Alan walker</div></h5>
+              </li>
+              <li class="songItem"> 
+                <div class="img_play">
+                  <img src="assests/images/1.jpg" alt="">
+                  <i class="fa-solid fa-circle-play   playlistPlay"id="30"></i>
+                </div>
+                <h5>on my way <br> <div class="title">Alan walker</div></h5>
+              </li>
+          </div>
+        </div>
+        <div class="popular_artist">
+          <div class="h4">
+            <h4>popular artist</h4>
+            <div class="btn-s">
+              <i class="fa-solid fa-arrow-left" id="pop_art_left"></i>
+              <i class="fa-solid fa-arrow-right"id="pop_art_right"></i>
+            </div>
+          </div>
+          <div class="item">
+            <li class="itemList">
+                <img src="./assests/images/15.jpg " alt="" id="1">
+            </li>
+            <li class="itemList"> 
+                <img src="./assests/images/15.jpg" alt=""  id="2">
+            </li>
+            <li class="itemList">
+                <img src="./assests/images/15.jpg" alt=""  id="3">
+            </li>
+            <li class="itemList">
+                <img src="./assests/images/15.jpg" alt=""  id="4">
+            </li >
+            <li class="itemList">
+                <img src="./assests/images/15.jpg" alt=""  id="5">
+            </li class="itemList">
+            <li class="itemList">
+                <img src="./assests/images/15.jpg" alt=""  id="6">
+            </li>
+            <li class="itemList">
+                <img src="./assests/images/15.jpg" alt=""  id="7">
+            </li>
+            <li class="itemList">
+              <img src="./assests/images/15.jpg" alt=""  id="8">
+            </li>
+            <li class="itemList">
+              <img src="./assests/images/15.jpg" alt=""  id="9">
+            </li>
+            <li class="itemList">
+              <img src="./assests/images/15.jpg" alt=""  id="10" >
+            </li>
+            <li class="itemList">
+              <img src="./assests/images/15.jpg" alt=""  id="11">
+            </li>
+            <li class="itemList">
+              <img src="./assests/images/15.jpg" alt=""  id="12">
+            </li>
+            <li class="itemList">
+              <img src="./assests/images/15.jpg" alt=""  id="13">
+            </li >
+            <li class="itemList">
+              <img src="./assests/images/15.jpg" alt=""  id="14">
+            </li>
+            <li class="itemList">
+              <img src="./assests/images/15.jpg" alt=""  id="15">
+            </li>
+            <li class="itemList">
+              <img src="./assests/images/15.jpg" alt=""  id="16">
+            </li>
+            <li class="itemList">
+              <img src="./assests/images/15.jpg" alt=""  id="17">
+            </li>
+            <li class="itemList">
+              <img src="./assests/images/15.jpg" alt=""  id="18">
+            </li>
+            <li class="itemList">
+              <img src="./assests/images/15.jpg" alt=""  id="19">
+            </li>
+            <li class="itemList">
+              <img src="./assests/images/15.jpg" alt=""  id="20">
+            </li>
+            <li class="itemList">
+              <img src="./assests/images/15.jpg " alt="" id="21">
+          </li>
+          <li class="itemList"> 
+              <img src="./assests/images/15.jpg" alt=""  id="22">
+          </li>
+          <li class="itemList">
+              <img src="./assests/images/15.jpg" alt=""  id="23">
+          </li>
+          <li class="itemList">
+              <img src="./assests/images/15.jpg" alt=""  id="24">
+          </li >
+          <li class="itemList">
+              <img src="./assests/images/15.jpg" alt=""  id="25">
+          </li class="itemList">
+          <li class="itemList">
+              <img src="./assests/images/15.jpg" alt=""  id="26">
+          </li>
+          <li class="itemList">
+              <img src="./assests/images/15.jpg" alt=""  id="27">
+          </li>
+          <li class="itemList">
+            <img src="./assests/images/15.jpg" alt=""  id="28">
+          </li>
+          <li class="itemList">
+            <img src="./assests/images/15.jpg" alt=""  id="29">
+          </li>
+          <li class="itemList">
+            <img src="./assests/images/15.jpg" alt=""  id="30">
+          </li>
+            
+           
+          </div>
+        </div>
+      </div>
+      <div class="bottom-side">
+        <div class="wave" id="wave">
+          <div class="wave1"></div>
+          <div class="wave1"></div>
+          <div class="wave1"></div>
+        </div>
+        <img src="assests/images/1.jpg" alt="" id="image_poster">
+        <h5 id="title">
+          on my way
+          <div class="subtitle">Alan walker</div>
+        </h5>
+        <div class="icons">
+          <i class="shuffel fa-solid fa-music">next</i>
+          <i class="fa-solid fa-backward-step" id="back"></i>
+          <i class="fa-solid fa-play" id="masterPlay"></i>
+          <i class="fa-solid fa-forward-step" id="next"></i>
+        </div>
+        <span id="currentRun">0:00</span>
+        <div class="run">
+          <input type="range" min="0"max="100" id="range">
+          <div class="secondRun" id="secondRun"></div>
+          <div class="circle" ></div>
+        </div>
+        <span id="currentEnd">0:30</span>
+        
+     </div>
+    </header>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

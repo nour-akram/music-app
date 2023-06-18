@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="./login.css">
+    <!-- <link rel="stylesheet" href="./home.css"> -->
+    <link rel="icon" type="image/x-icon" href="assests/favicon-removebg-preview.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+</head>
+<body>
+    <!-- loader -->
+    <div id="overlay">
+        <div class="container-for-loader">
+            <span class="loader"></span>
+        </div>
+    </div>
+    <div class="icon_light">
+        <i class="moon fa-solid fa-moon" id="moon"></i>
+        <i class="sun fa-solid fa-sun" id="sun"></i>
+    </div>
+    <header>
+    
+    <div class="image">
+        <img src="assests/images/360_F_429161420_NBpiHCojyGDZyQWMW3Hh1hKq90Y9bPBp-removebg-preview.png" alt="">
+    </div>
+    <div class="login-box">
+        <h2>sign up</h2>
+        <form id="form" >
+            <div class="user-box">
+                <input type="text" name="" id='username' class="inp">
+                <label id="lbl1" >Username</label>
+                <p id="errorText"></p>
+            </div>
+            <div class="user-box">
+                <input type="password" name=""id='password' class="inp">
+                <label id="lbl2" >Password</label>
+                <p id="errorPass"></p>
+            </div>
+            <div class="user-box">
+                <input type="text" name="" id='email' class="inp">
+                <label id="lbl3" >EMAIL</label>
+                <p id="errorEmail"></p>
+            </div>
+
+            <label for="upload_img" id="label">Choose file:
+                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    <input type="file" id="upload_img" name="img" accept="image/*" >
+            </label>
+            <input id="btn" type="submit" value="submit">
+               
+        </form>
+    </div>
+    
+    </header>
+    <script src="./login.js"></script>
+    <!-- <script src="./script.js"></script> -->
+</body>
+</html>

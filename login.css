@@ -1,0 +1,231 @@
+html {
+    height: 100%;
+  }
+  :root{
+    --background--color: #111727;
+    --two--color:#0b1320;
+    --three--color:#137e81;
+    --four--color:rgb(255, 255, 255);
+    --error--color:rgb(201, 86, 86);
+  }
+  .light_mood{
+    --background--color: #b891af;
+    --two--color:#a87d9f;
+    --three--color:#92387c;
+    --four--color:rgb(0, 0, 0);
+    --error--color: #701239;
+  }
+  body {
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    background-color: var(--background--color);
+  }
+  
+  header{
+    display: flex;
+    align-items: center;
+    margin: auto;
+  }
+  header .image{
+   position: absolute;
+   top:20%;
+   left: 50%;
+  }
+  
+  .login-box {
+    position: absolute;
+    top:50%;
+    left: 40%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px var(--one_color);
+    border-radius: 10px;
+    background-color: var(--two--color);
+  }
+  
+  .login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: var(--four--color);
+    text-align: center;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+  .login-box .user-box input ,.login-box .user-box input:focus{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--four--color);
+    margin-bottom: 50px;
+    border: none;
+    border-bottom: 1px solid var(--four--color);
+    outline: none;
+    background: transparent;
+  }
+  .login-box .user-box label,.login-box .user-box label.notActive{
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--four--color);
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label {
+    top: -20px;
+    left: 0;
+    color: var(--three--color);
+    font-size: 12px;
+  }
+  .login-box .user-box label.active{
+    top: -20px;
+    left: 0;
+    color: var(--three--color);
+    font-size: 12px;
+  }
+  
+  .login-box form #btn {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: var(--three--color);
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    transition: .5s;
+    margin-top: 70px;
+    letter-spacing: 4px
+  }
+  
+  .login-box #btn:hover {
+    background: var(--three--color);
+    color: var(--forth--color);
+    border-radius: 5px;
+    box-shadow: 0 0 5px var(--three--color),
+                0 0 25px var(--three--color),
+                0 0 50px var(--three--color),
+                0 0 100px var(--three--color);
+  }
+  
+  input[type='file']{
+    display: none;
+  }
+  #label{
+    color: var(--four--color);
+    font-size: 15px;
+    width: 45%;
+    background-color: var(--three--color);
+    padding: 10px 20px;
+    display: flex;
+    box-shadow: 5px 15px 25px var(--sex--color);
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  #label i{
+    margin-left: 5px;
+  }
+  p{
+    color: var(--error--color);
+    font-size: 9px;
+    margin-top: -13%;
+  }
+  /* .image{
+    
+  } */
+  
+  .icon_light{
+    position: relative;
+  }
+ .icon_light .moon{
+    position: absolute;
+    color: rgb(53, 107, 207);
+    font-size: 30px;
+    left: 6%;
+    cursor: pointer;
+    top: 35px;
+  }
+  .icon_light .sun{
+    position: absolute;
+    color:#92387c;
+    left: 6%;
+    font-size: 30px;
+    top: 35px;
+    display: none;
+    cursor: pointer;
+  }
+  
+  
+  @media (max-width: 1100px){
+     .login-box{
+       width: 322px;
+     }
+   header .image{
+     position: absolute;
+    top: 30%;
+    left: 45%;
+    }
+  }
+  @media (max-width: 991px){
+    .login-box{
+      width: 322px;
+      left: 29%;
+     }
+   header .image{
+    position: absolute;
+     top: 30%;
+    left: 33%;
+    }
+  }
+  
+  @media (max-width: 767px){
+       .login-box{
+      left: 50%;
+     }
+   header .image{
+     top: 30%;
+    display: none;
+    }
+  }
+ 
+  
+  @media (max-width: 437px){
+      .login-box{
+      width: 242px;
+     }
+     .login-box h2 {
+   margin: 0 0 14px;
+    font-size: 20px;
+  }
+  .login-box .user-box {
+    margin-bottom: -35px;
+}
+.login-box .user-box label {
+  font-size: 13px;
+}
+#label {
+ padding: 6px 9px;
+ font-size: 11px;
+}
+.login-box form #btn {
+  margin-top: 37px;
+  font-size: 14px;
+  padding: 0px 6px;
+}
+.icon_light .moon ,.icon_light .sun{
+    font-size: 20px;
+}
+  }
+  
