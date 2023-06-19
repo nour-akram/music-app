@@ -893,32 +893,31 @@ header .right-side::before {
     display: flex;
     align-items: center;
 }
-header .right-side nav .details {
+/* header .right-side nav .details {
   width: 58px;
-}
-header .right-side nav ul {
-  width: 43%;
-  /* border: 1px solid white; */
-}
+} */
+
 header .right-side nav ul li {
   margin-right: 10px;
   }
   header .right-side nav .details {
-    width: 60px;
-    /* border: 1px solid white; */
-    display: flex;
-    padding-right: 4px;
-    
+    width: 94px;
+    margin-right: -15px;
+  }
+  header .right-side nav .details p {
+    width: 63%;
+  }
+  header .right-side nav .details .user_image {
+    width: 35%;
+}
+header .right-side nav .details .user_image img {
+  width: 100%;
+  height: 100%;
 }
 header .right-side nav .search {
   padding: 1px 0px;
 }
-/* header .right-side nav .details p {
-  width: 85%;
-}
-header .right-side nav .details .user_image {
-  width: 15%;
-} */
+
 }
 @media (max-width: 380px){
   header .bottom-side .icons::before {

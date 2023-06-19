@@ -202,7 +202,50 @@ const songs =[
     id:30,
     songName:`Until I Found You<br> <div class="title">Stephen Sanchez </div>`,
     poster:"./assests/images/30.jpg"
-    }
+    },
+    {
+      id:31,
+      songName:`raded elsatr<br> <div class="title">Mohamed chahine</div>`,
+      poster:"./assests/images/31.jpg"
+      },
+
+    {
+      id:32,
+      songName:`ta5ed el2al <br> <div class="title">Abd elrahman elgharawy</div>`,
+      poster:"./assests/images/32.jpg"
+    },
+    {
+      id:33,
+      songName:`ymenken 5er <br> <div class="title">Ramy sabry</div>`,
+      poster:"./assests/images/33.jpg"
+      },
+    {
+      id:34,
+      songName:` lw gay fe rego3 <br> <div class="title">farid</div>`,
+      poster:"./assests/images/34.jpg"
+      },  
+    
+    {
+        id:35,
+        songName:` zorof m3andany <br> <div class="title">wael gasar </div>`,
+        poster:"./assests/images/35.jpg"
+    },  
+    {
+        id:36,
+        songName:` abl mawsalek<br> <div class="title">Muslime </div>`,
+        poster:"./assests/images/36.jpg"
+    },
+    { 
+        id:37,
+        songName:` haga mestakhabia <br> <div class="title" >hamaki</div>`,
+        poster:"./assests/images/37.jpg"
+    },
+
+    {
+        id:38,
+        songName:` ya araf<br> <div class="title">Ahmed saad</div>`,
+        poster:"./assests/images/38.jpg"
+    },
 
 ]
 

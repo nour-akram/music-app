@@ -32,8 +32,8 @@ form.addEventListener("submit",(e)=>{
     if(password==''){
       errorPass.innerHTML="password is required";
     }
-    else if(password.length <= 5 || password.length >= 10 ){
-      errorPass.innerHTML="must be min 5 and max 10";
+    else if(password.length <= 8 || password.length >= 25 ){
+      errorPass.innerHTML="must be min 8 and max 25";
     }
     else  { 
       errorPass.innerHTML="";
@@ -78,7 +78,7 @@ upload_img.addEventListener('change',function(){
 })
 
 
-localStorage.clear()
+// localStorage.clear()
 
 let light2=localStorage.getItem('light_mood');
 let moon =document.getElementById('moon')
