@@ -920,3 +920,13 @@ header .right-side nav .details .user_image {
   width: 15%;
 } */
 }
+@media (max-width: 380px){
+  header .bottom-side .icons::before {
+    width: 150px;
+    height: 116px;
+    left: 9%;
+  }
+  header .bottom-side .wave {
+    right: 43%;
+  }
+}

@@ -232,16 +232,10 @@ p{
   position: absolute;
   bottom: 26px;
 }
-  }
+}
   
-  @media (max-width: 380px){
-    header .bottom-side .icons::before {
-      width: 150px;
-      height: 116px;
-      left: 9%;
-    }
-    header .bottom-side .wave {
-      right: 43%;
-      }
   
-  }
+      /* p{
+        position: absolute;
+        bottom: 28px;
+      } */ 
