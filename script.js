@@ -178,7 +178,7 @@ const songs =[
     },  
     {
         id:26,
-        songName:` El Waqaa El Akheera<br> <div class="title">Hamza Namira </div>`,
+        songName:`misa mene leko <br> <div class="title">essam sasa</div>`,
         poster:"./assests/images/26.jpg"
     },
     { 
@@ -463,10 +463,11 @@ pop_song_left.addEventListener('click',()=>{
   input.addEventListener("keyup", () => {
     let input_val=input.value.toUpperCase();
     let items=search_result.getElementsByTagName('a');
-    
+    // console.log(items);
     for(let i=0;i<items.length;i++){
         let as=items[i].getElementsByClassName('content')[0];
         let text_val=as.textContent ||as.innerText;
+        // console.log(text_val.toUpperCase().indexOf(input_val));
         if(text_val.toLocaleUpperCase().indexOf(input_val)>-1){
            items[i].style.display="flex"
         }
